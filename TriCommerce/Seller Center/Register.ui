@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>804</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Seller Centre</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+	background-color:rgb(255, 85, 0);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget
+{
+	background-color:rgb(255, 85, 0);
+}</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>0</y>
+      <width>561</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semibold</family>
+      <pointsize>50</pointsize>
+      <weight>7</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: white;
+	font: 63 50pt &quot;Yu Gothic UI Semibold&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Seller Registration</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="storeNameInput">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>100</y>
+      <width>491</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+	border: 2px solid rgb(0, 0, 0);        /* Blue border */
+    border-radius: 10px;             /* Rounded corners */
+    padding: 5px;                    /* Inner padding */
+    font-size: 14px;                 /* Text size */
+    color: #2c3e50;                  /* Text color */
+    background-color: #ecf0f1;
+}</string>
+    </property>
+    <property name="text">
+     <string>Store Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="cnicInput">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>491</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+	border: 2px solid rgb(0, 0, 0);        /* Blue border */
+    border-radius: 10px;             /* Rounded corners */
+    padding: 5px;                    /* Inner padding */
+    font-size: 14px;                 /* Text size */
+    color: #2c3e50;                  /* Text color */
+    background-color: #ecf0f1;
+}</string>
+    </property>
+    <property name="text">
+     <string>CNIC Number</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="bankNameInput">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>180</y>
+      <width>491</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox
+{
+	border: 2px solid rgb(0, 0, 0);        /* Blue border */
+    border-radius: 10px;             /* Rounded corners */
+    padding: 5px;                    /* Inner padding */
+    font-size: 14px;                 /* Text size */
+    color: #2c3e50;                  /* Text color */
+    background-color: #ecf0f1;
+}</string>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="accountNumberInput">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>220</y>
+      <width>491</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+	border: 2px solid rgb(0, 0, 0);        /* Blue border */
+    border-radius: 10px;             /* Rounded corners */
+    padding: 5px;                    /* Inner padding */
+    font-size: 14px;                 /* Text size */
+    color: #2c3e50;                  /* Text color */
+    background-color: #ecf0f1;
+}</string>
+    </property>
+    <property name="text">
+     <string>Account Number</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nameInput">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>260</y>
+      <width>491</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+	border: 2px solid rgb(0, 0, 0);        /* Blue border */
+    border-radius: 10px;             /* Rounded corners */
+    padding: 5px;                    /* Inner padding */
+    font-size: 14px;                 /* Text size */
+    color: #2c3e50;                  /* Text color */
+    background-color: #ecf0f1;
+}</string>
+    </property>
+    <property name="text">
+     <string>Name on CNIC</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="contactNumberInput">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>300</y>
+      <width>491</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+	border: 2px solid rgb(0, 0, 0);        /* Blue border */
+    border-radius: 10px;             /* Rounded corners */
+    padding: 5px;                    /* Inner padding */
+    font-size: 14px;                 /* Text size */
+    color: #2c3e50;                  /* Text color */
+    background-color: #ecf0f1;
+}</string>
+    </property>
+    <property name="text">
+     <string>Contact Number</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="emailInput">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>340</y>
+      <width>491</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+	border: 2px solid rgb(0, 0, 0);        /* Blue border */
+    border-radius: 10px;             /* Rounded corners */
+    padding: 5px;                    /* Inner padding */
+    font-size: 14px;                 /* Text size */
+    color: #2c3e50;                  /* Text color */
+    background-color: #ecf0f1;
+}</string>
+    </property>
+    <property name="text">
+     <string>Email Address</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordInput">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>380</y>
+      <width>491</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+	border: 2px solid rgb(0, 0, 0);        /* Blue border */
+    border-radius: 10px;             /* Rounded corners */
+    padding: 5px;                    /* Inner padding */
+    font-size: 14px;                 /* Text size */
+    color: #2c3e50;                  /* Text color */
+    background-color: #ecf0f1;
+}</string>
+    </property>
+    <property name="text">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cityInput">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>420</y>
+      <width>491</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox
+{
+	border: 2px solid rgb(0, 0, 0);        /* Blue border */
+    border-radius: 10px;             /* Rounded corners */
+    padding: 5px;                    /* Inner padding */
+    font-size: 14px;                 /* Text size */
+    color: #2c3e50;                  /* Text color */
+    background-color: #ecf0f1;
+}</string>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="addressInput">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>460</y>
+      <width>491</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+	border: 2px solid rgb(0, 0, 0);        /* Blue border */
+    border-radius: 10px;             /* Rounded corners */
+    padding: 5px;                    /* Inner padding */
+    font-size: 14px;                 /* Text size */
+    color: #2c3e50;                  /* Text color */
+    background-color: #ecf0f1;
+}</string>
+    </property>
+    <property name="text">
+     <string>Business Address</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="registerButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>500</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: white;       /* Blue background */
+    color: black;                    /* White text */
+    border: 2px solid rgb(0, 0, 0);       /* Darker blue border */
+    border-radius: 12px;             /* Rounded corners */
+    font-size: 20px;                 /* Larger font */
+    padding: 10px 20px;              /* Add some padding */
+    min-width: 150px; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Register</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

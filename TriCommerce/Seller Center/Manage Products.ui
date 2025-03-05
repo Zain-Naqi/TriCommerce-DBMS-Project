@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background:rgb(255, 85, 0)
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>10</y>
+      <width>221</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	color: white;
+	font: 63 40pt &quot;Yu Gothic UI Semibold&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Products</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="activeButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>100</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: white;       /* Blue background */
+    color: black;                    /* White text */
+    border: 2px solid rgb(0, 0, 0);       /* Darker blue border */
+    border-radius: 12px;             /* Rounded corners */
+    font-size: 20px;                 /* Larger font */
+    padding: 10px 20px;              /* Add some padding */
+    min-width: 70px; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Active</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pendingButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>100</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: white;       /* Blue background */
+    color: black;                    /* White text */
+    border: 2px solid rgb(0, 0, 0);       /* Darker blue border */
+    border-radius: 12px;             /* Rounded corners */
+    font-size: 20px;                 /* Larger font */
+    padding: 10px 20px;              /* Add some padding */
+    min-width: 70px; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Pending</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="inactiveButton">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>100</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: white;       /* Blue background */
+    color: black;                    /* White text */
+    border: 2px solid rgb(0, 0, 0);       /* Darker blue border */
+    border-radius: 12px;             /* Rounded corners */
+    font-size: 20px;                 /* Larger font */
+    padding: 10px 20px;              /* Add some padding */
+    min-width: 70px; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Inactive</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="productsTable">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>160</y>
+      <width>641</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    border: 2px solid #34495e;       /* Border around the table */
+    border-radius: 8px;              /* Rounded corners */
+    background-color: #ecf0f1;       /* Table background color */
+    gridline-color: #bdc3c7;         /* Color of grid lines */
+    font-size: 14px;                 /* Font size for table cells */
+    color: #2c3e50;                  /* Font color */
+    padding: 5px;                    /* Padding around content */
+}
+
+QHeaderView::section {
+    background-color: #2c3e50;       /* Header background color */
+    color: #ecf0f1;                  /* Header font color */
+    padding: 6px;                    /* Padding for header text */
+    font-size: 14px;                 /* Font size for header */
+    font-weight: bold;               /* Bold header text */
+    border: 1px solid #34495e;       /* Border for header cells */
+}
+
+QTableWidget::item {
+    background-color: #ffffff;       /* Background for table cells */
+    border: none;                    /* No border around cells */
+}
+
+QTableWidget::item:hover {
+    background-color: #dfe6e9;       /* Highlight row on hover */
+    color: #2c3e50;                  /* Font color on hover */
+}
+
+QTableWidget::item:selected {
+    background-color: #3498db;       /* Selected row background */
+    color: #ffffff;                  /* Selected row font color */
+}
+
+/* Vertical Scrollbar */
+QScrollBar:vertical {
+    border: none;                    /* No border for scrollbar */
+    background: #bdc3c7;             /* Scrollbar background */
+    width: 12px;                     /* Scrollbar width */
+    margin: 15px 0px 15px 0px;       /* Margins around scrollbar */
+}
+
+QScrollBar::handle:vertical {
+    background: #2c3e50;             /* Scrollbar handle color */
+    min-height: 20px;                /* Minimum handle height */
+    border-radius: 6px;              /* Rounded scrollbar handle */
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;                     /* Remove scroll buttons */
+}
+
+/* Horizontal Scrollbar */
+QScrollBar:horizontal {
+    border: none;                    /* No border for scrollbar */
+    background: #bdc3c7;             /* Scrollbar background */
+    height: 12px;                    /* Scrollbar height */
+    margin: 0px 15px 0px 15px;       /* Margins around scrollbar */
+}
+
+QScrollBar::handle:horizontal {
+    background: #2c3e50;             /* Scrollbar handle color */
+    min-width: 20px;                 /* Minimum handle width */
+    border-radius: 6px;              /* Rounded scrollbar handle */
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;                      /* Remove scroll buttons */
+}
+</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>160</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Product SKU</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Stock</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Price</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="activateButton">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>500</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: white;       /* Blue background */
+    color: black;                    /* White text */
+    border: 2px solid rgb(0, 0, 0);       /* Darker blue border */
+    border-radius: 12px;             /* Rounded corners */
+    font-size: 20px;                 /* Larger font */
+    padding: 10px 20px;              /* Add some padding */
+    min-width: 70px; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Deactivate</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addProductButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>500</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: white;       /* Blue background */
+    color: black;                    /* White text */
+    border: 2px solid rgb(0, 0, 0);       /* Darker blue border */
+    border-radius: 12px;             /* Rounded corners */
+    font-size: 20px;                 /* Larger font */
+    padding: 10px 20px;              /* Add some padding */
+    min-width: 70px; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Add Product</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="homeButton">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>10</y>
+      <width>114</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: white;       /* Blue background */
+    color: black;                    /* White text */
+    border: 2px solid rgb(0, 0, 0);       /* Darker blue border */
+    border-radius: 12px;             /* Rounded corners */
+    font-size: 20px;                 /* Larger font */
+    padding: 10px 20px;              /* Add some padding */
+    min-width: 50px; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Home</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

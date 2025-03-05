@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>804</width>
+    <height>582</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background:rgb(255, 85, 0)
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>283</x>
+      <y>150</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: white;       /* Blue background */
+    color: black;                    /* White text */
+    border: 2px solid rgb(0, 0, 0);       /* Darker blue border */
+    border-radius: 12px;             /* Rounded corners */
+    font-size: 20px;                 /* Larger font */
+    padding: 10px 20px;              /* Add some padding */
+    min-width: 150px; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Manage Products</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>283</x>
+      <y>230</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: white;       /* Blue background */
+    color: black;                    /* White text */
+    border: 2px solid rgb(0, 0, 0);       /* Darker blue border */
+    border-radius: 12px;             /* Rounded corners */
+    font-size: 20px;                 /* Larger font */
+    padding: 10px 20px;              /* Add some padding */
+    min-width: 150px; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Manage Sellers</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>283</x>
+      <y>310</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: white;       /* Blue background */
+    color: black;                    /* White text */
+    border: 2px solid rgb(0, 0, 0);       /* Darker blue border */
+    border-radius: 12px;             /* Rounded corners */
+    font-size: 20px;                 /* Larger font */
+    padding: 10px 20px;              /* Add some padding */
+    min-width: 150px; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Manage Finances</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="manageOrdersButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>390</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: white;       /* Blue background */
+    color: black;                    /* White text */
+    border: 2px solid rgb(0, 0, 0);       /* Darker blue border */
+    border-radius: 12px;             /* Rounded corners */
+    font-size: 20px;                 /* Larger font */
+    padding: 10px 20px;              /* Add some padding */
+    min-width: 150px; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Manage Orders</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
