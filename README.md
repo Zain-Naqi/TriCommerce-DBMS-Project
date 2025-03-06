@@ -43,3 +43,6 @@ Navigate to the relevant folder and run the corresponding Python file based on t
   "Trusted_Connection=yes;"
   "TrustServerCertificate=yes;"
 - You may change SERVER=ZAIN_PC\\MYSQL1; in accordance with your own system.
+
+  ![ERD](ERD.png)
+
